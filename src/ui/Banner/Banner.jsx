@@ -25,7 +25,7 @@ function Banner({ image, children }) {
 Banner.Action = function ({ id, title, icon, onClick, className }) {
   return (
     <div className="actions">
-      <Button className={className} basic onClick={onClick}>
+      <Button className={className} basic onClick={onClick} as="a">
         <Icon name={icon}></Icon>
         <span className="mobile hidden">{title}</span>
       </Button>
