@@ -3,7 +3,7 @@ import ReverseCardGrid from './ReverseCardGrid';
 // eslint-disable-next-line import/no-unresolved
 
 export default {
-    title: 'Components/ReverseCardGrid',
+    title: 'Components/Reverse Card Grid',
     component: ReverseCardGrid,
     argTypes: {
         title: {
@@ -15,13 +15,20 @@ export default {
         },
         content: {
             description: 'Reverse Card content',
+        },
+        buttonText: {
+            description: 'button text',
+            table: {
+                defaultValue: { summary: '""' },
+                type: { summary: 'string' },
+            },
         }
     },
 };
 
 const DefaultTemplate = (args) => (
     <ReverseCardGrid {...args}>
-        <ReverseCardGrid.Group cards={args.cards}></ReverseCardGrid.Group>
+        <ReverseCardGrid.Group {...args} cards={args.cards}></ReverseCardGrid.Group>
     </ReverseCardGrid>
 );
 
@@ -55,6 +62,7 @@ Default.args = {
             content: <div style={{ backgroundColor: '#C4C4C4', height: '100%', width: '100%' }}></div>,
         },
     ],
+    buttonText: 'See All'
 
 };
 

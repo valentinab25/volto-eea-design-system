@@ -9,9 +9,57 @@
 
 .eea.reverse-card-grid {
   width: 100%;
-  
+
   .button-wrapper {
     display: flex;
     justify-content: end;
+  }
+  .reverse-card.group {
+    .column {
+      display: none;
+    }
+
+    .column:nth-child(1),
+    .column:nth-child(2),
+    .column:nth-child(3) {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: @tabletBreakpoint) {
+  .eea.reverse-card-grid {
+    .reverse-card.group {
+      .column {
+        display: none;
+      }
+
+      .column:nth-child(1),
+      .column:nth-child(2),
+      .column:nth-child(3),
+      .column:nth-child(4) {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @computerBreakpoint) {
+  .eea.reverse-card-grid {
+    .eea.reverse-card-grid {
+      .reverse-card.group {
+        .column {
+          display: none;
+        }
+
+        .column:nth-child(1),
+        .column:nth-child(2),
+        .column:nth-child(3),
+        .column:nth-child(4),
+        .column:nth-child(5) {
+          display: block;
+        }
+      }
+    }
   }
 }
