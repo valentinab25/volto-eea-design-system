@@ -25,3 +25,7 @@ export Testimonial from './Testimonial/Testimonial';
 export AvatarGrid from './AvatarGrid/AvatarGrid';
 
 export KeyContent from './KeyContent/KeyContent';
+
+export ReverseCard from './ReverseCard/ReverseCard';
+
+export ReverseCard from './ReverseCard/ReverseCardGrid';
