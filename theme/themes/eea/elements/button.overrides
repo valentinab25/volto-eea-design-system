@@ -130,13 +130,6 @@ p.ui.button {
   }
 }
 
-.ui.circular.icon.button {
-  padding: @circularButtonPadding;
-
-  .icon {
-    font-size: @circularButtonIconFontSize;
-  }
-}
 
 /* Advanced Search Button - to be deleted*/
 .ui.button.search {
@@ -168,30 +161,13 @@ p.ui.button {
   opacity: @searchButtonIconOpacity;
 }
 
-.searchbox.field > .ui.action.input > .icon.button {
-  padding-top: 0;
-  padding-right: 0;
-  background: none;
-  color: @blue;
-  line-height: 1.6;
-
-  &:hover {
-    background: none;
-  }
+/*******************************
+  Pastananga Theme Overrides
+*******************************/
+.ui.circular.icon.button {
+  padding: @circularButtonPadding;
 
   .icon {
-    font-weight: bold;
-  }
-}
-
-.ui.basic.button {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  text-align: initial;
-
-  &:focus {
-    outline: none;
+    font-size: @circularButtonIconFontSize;
   }
 }
